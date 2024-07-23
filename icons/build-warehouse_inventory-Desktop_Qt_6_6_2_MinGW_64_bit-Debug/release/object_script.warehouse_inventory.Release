@@ -1,0 +1,10 @@
+release/addproductdialog.o
+release/main.o
+release/mainwindow.o
+release/paginationmanager.o
+release/readonlyitemdelegate.o
+release/qrc_Resources.o
+release/moc_addproductdialog.o
+release/moc_mainwindow.o
+release/moc_paginationmanager.o
+release/moc_readonlyitemdelegate.o

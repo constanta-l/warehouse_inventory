@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>988</width>
+    <height>619</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Stoc Depozit</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>961</width>
+      <height>581</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Tab 1</string>
+     </attribute>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>60</y>
+        <width>371</width>
+        <height>431</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QLabel" name="ProductsLabel">
+         <property name="styleSheet">
+          <string notr="true">background-color: transparent;
+    color: #454544;
+    font-weight: bold;
+    font-size: 13px;</string>
+         </property>
+         <property name="text">
+          <string>Stoc curent</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTableView" name="tableView">
+         <property name="styleSheet">
+          <string notr="true">QTableView {
+    background-color: #fff;
+    border: 1px solid gray;
+    color: #454544;
+    gridline-color: gray;
+    outline: 0;
+    font-size: 16px; /* Increase font size */
+}
+
+
+
+QTableView::item:selected {
+    background-color: #5c55e9;
+    color: #fff;
+}
+
+QTableView::item:hover {
+    background-color: #bcbdbb;
+    color: #000;
+}
+
+QHeaderView::section {
+    color: #2a547f;
+    background-color: #ced5e3;
+    padding: 8px; /* Adjust padding for headers */
+    font-size: 16px;
+    border-bottom: 1px solid gray;
+}
+
+QHeaderView::section:disabled {
+    background-color: #525251;
+    color: #656565;
+}
+
+
+
+QHeaderView::section:checked:disabled {
+    color: #656565;
+    background-color: #525251;
+}
+
+/* Border styling */
+QHeaderView::section::first {
+    border-top: 1px solid #353635;
+}
+
+QHeaderView::section::last {
+    border-left: 1px solid #353635;
+}</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <widget class="QPushButton" name="prevBtn">
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+    background-color: #5c55e9;
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+QPushButton:disabled {
+    background-color: #5c5c5c;
+}
+
+QPushButton:hover {
+    background-color: #5564f2;
+}
+
+QPushButton:pressed {
+    background-color: #3d4ef2;
+}
+</string>
+             </property>
+             <property name="text">
+              <string>Precedentă</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="pageLabel">
+             <property name="styleSheet">
+              <string notr="true">background-color: transparent;
+    color: #454544;
+    font-weight: bold;
+    font-size: 13px;</string>
+             </property>
+             <property name="text">
+              <string>TextLabel</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="nextBtn">
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+    background-color: #5c55e9;
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+QPushButton:disabled {
+    background-color: #5c5c5c;
+}
+
+QPushButton:hover {
+    background-color: #5564f2;
+}
+
+QPushButton:pressed {
+    background-color: #3d4ef2;
+}
+</string>
+             </property>
+             <property name="text">
+              <string>Următoarea</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QLineEdit" name="searchLineEdit">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>20</y>
+        <width>261</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="searchBtn">
+      <property name="geometry">
+       <rect>
+        <x>700</x>
+        <y>20</y>
+        <width>111</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Caută</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>90</y>
+        <width>221</width>
+        <height>281</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QPushButton" name="pushButton">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: #5c55e9;
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+QPushButton:disabled {
+    background-color: #5c5c5c;
+}
+
+QPushButton:hover {
+    background-color: #5564f2;
+}
+
+QPushButton:pressed {
+    background-color: #3d4ef2;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Toate Produsele</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="addBtn">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: #5c55e9;
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+QPushButton:disabled {
+    background-color: #5c5c5c;
+}
+
+QPushButton:hover {
+    background-color: #5564f2;
+}
+
+QPushButton:pressed {
+    background-color: #3d4ef2;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Adaugă produs</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="deleteBtn">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: #5c55e9;
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+QPushButton:disabled {
+    background-color: #5c5c5c;
+}
+
+QPushButton:hover {
+    background-color: #5564f2;
+}
+
+QPushButton:pressed {
+    background-color: #3d4ef2;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Șterge produs</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="toPdfBtn">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: red;
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px;
+}</string>
+         </property>
+         <property name="text">
+          <string>Descarcă stoc curent (PDF)</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Tab 2</string>
+     </attribute>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

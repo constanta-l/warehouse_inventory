@@ -1,0 +1,10 @@
+debug/addproductdialog.o
+debug/main.o
+debug/mainwindow.o
+debug/paginationmanager.o
+debug/readonlyitemdelegate.o
+debug/qrc_Resources.o
+debug/moc_addproductdialog.o
+debug/moc_mainwindow.o
+debug/moc_paginationmanager.o
+debug/moc_readonlyitemdelegate.o
